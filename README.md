@@ -7,6 +7,7 @@ Simple smart parking system database with some sample data - DBI202.
 - Không chỉnh sửa file nằm trong thư mục của người khác hoặc file tổng hợp như Environment, SmartParkingSystem
 - Tải tất cả file/folder khi chạy nhưng chỉ chỉnh sửa file trên thư mục của mình
 - Khi pull request phải ghi ngày update vào commit title và ghi rõ đã chỉnh sửa gì ở phần description
+- Khi commit lên branch của mình không được bỏ folder tổng vào mà kéo toàn bộ file/folder bên trong bỏ vào
 
 # Workflow
  1. Download dự án về máy
