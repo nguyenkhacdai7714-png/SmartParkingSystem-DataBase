@@ -1,3 +1,5 @@
+:setvar ProjectPath "C:\Users\KHAC DAI\Downloads\SmartParkingSystem-DataBase-main\SmartParkingSystem-DataBase-main"
+
 USE master;
 GO
 
@@ -14,20 +16,23 @@ GO
 USE db_SmartParkingSystem;
 GO
 
-:r .\Dai\ParkingGarage.sql
-:r .\Vuong\User.sql
-:r .\Vuong\Promotion.sql
+:r $(ProjectPath)\Dai\tbl_ParkingGarage.sql
+:r $(ProjectPath)\Vuong\tbl_User.sql
+:r $(ProjectPath)\Vuong\tbl_Promotion.sql
 GO
-:r .\Vuong\Vehicle.sql
-:r .\Minh\Reservation.sql
-:r .\Minh\ParkingStaff.sql
-:r .\Dai\ParkingFloor.sql
+
+:r $(ProjectPath)\Vuong\tbl_Vehicle.sql
+:r $(ProjectPath)\Minh\tbl_Reservation.sql
+:r $(ProjectPath)\Minh\tbl_ParkingStaff.sql
+:r $(ProjectPath)\Dai\tbl_ParkingFloor.sql
 GO
-:r .\Dai\Spot.sql
-:r .\Vuong\ParkingSession.sql
+
+:r $(ProjectPath)\Dai\tbl_Spot.sql
+:r $(ProjectPath)\Vuong\tbl_ParkingSession.sql
 GO
-:r .\Minh\ParkingDevice.sql
-:r .\Thanh\ParkingLog.sql
-:r .\Thanh\ParkingRule.sql
-:r .\Thanh\DailyReport.sql
+
+:r $(ProjectPath)\Minh\tbl_ParkingDevice.sql
+:r $(ProjectPath)\Thanh\tbl_ParkingLog.sql
+:r $(ProjectPath)\Thanh\tbl_ParkingRule.sql
+:r $(ProjectPath)\Thanh\tbl_DailyReport.sql
 GO
