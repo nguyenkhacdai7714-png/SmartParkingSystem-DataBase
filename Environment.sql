@@ -1,5 +1,4 @@
-:setvar ProjectPath "C:\Users\KHAC DAI\Downloads\SmartParkingSystem-DataBase-main\SmartParkingSystem-DataBase-main"
-
+:setvar ProjectPath "C:\Subject\Term 3\DBI202\SmartParkingSystem-DataBase"
 USE master;
 GO
 
