@@ -1,5 +1,4 @@
 :setvar ProjectPath "C:\Users\KHAC DAI\Downloads\SmartParkingSystem-DataBase-main\SmartParkingSystem-DataBase-main"
-
 USE master;
 GO
 
