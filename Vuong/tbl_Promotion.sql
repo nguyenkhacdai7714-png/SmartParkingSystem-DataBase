@@ -1,5 +1,10 @@
+USE db_SmartParkingSystem
+GO
 
-CREATE TABLE dbo.Promotion (
+DROP TABLE IF EXISTS tbl_Promotion;
+GO
+
+CREATE TABLE tbl_Promotion (
     Promotion_Code VARCHAR(20) NOT NULL,
     Promotion_Name VARCHAR(100) NOT NULL,
     Promotion_Type VARCHAR(20) NOT NULL,

@@ -1,5 +1,10 @@
+USE db_SmartParkingSystem
+GO
 
-CREATE TABLE dbo.[User] (
+DROP TABLE IF EXISTS tbl_User;
+GO
+
+CREATE TABLE tbl_User (
     User_ID VARCHAR(10) NOT NULL,
     Username NVARCHAR(50) NOT NULL,
     Phone VARCHAR(10) NOT NULL,

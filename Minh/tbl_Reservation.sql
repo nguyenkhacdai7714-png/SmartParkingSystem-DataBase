@@ -2,10 +2,13 @@
 USE db_SmartParkingSystem;
 GO
 
+DROP TABLE IF EXISTS tbl_Reservation;
+GO
+
 CREATE TABLE tbl_Reservation (
     Reservation_ID VARCHAR(10) NOT NULL,
     User_ID VARCHAR(10) NOT NULL,
-    GarageID VARCHAR(10) NOT NULL,
+    Garage_ID VARCHAR(10) NOT NULL,
     Start_Time DATETIME NOT NULL,
     End_Time DATETIME NOT NULL,
     Status VARCHAR(10) NOT NULL
@@ -22,8 +25,8 @@ CREATE TABLE tbl_Reservation (
         ON DELETE NO ACTION,
 
     CONSTRAINT FK_Reservation_Garage
-        FOREIGN KEY (GarageID)
-        REFERENCES tbl_ParkingGarage(GarageID)
+        FOREIGN KEY (Garage_ID)
+        REFERENCES tbl_ParkingGarage(Garage_ID)
         ON DELETE NO ACTION,
 
     CONSTRAINT UQ_Reservation_User_Start

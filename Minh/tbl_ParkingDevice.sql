@@ -2,9 +2,12 @@
 USE db_SmartParkingSystem;
 GO
 
+DROP TABLE IF EXISTS tbl_ParkingDevice;
+GO
+
 CREATE TABLE tbl_ParkingDevice (
     Device_ID VARCHAR(10) NOT NULL,
-    Spot_ID VARCHAR(10) NOT NULL,
+    Spot_ID INT NOT NULL,
     IP_Address VARCHAR(45) NOT NULL,
     Device_Type VARCHAR(20) NOT NULL,
     Status VARCHAR(15) NOT NULL
