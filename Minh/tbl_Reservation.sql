@@ -1,8 +1,8 @@
-
 USE db_SmartParkingSystem;
 GO
 
-DROP TABLE IF EXISTS tbl_Reservation;
+IF OBJECT_ID('tbl_Reservation', 'U') IS NOT NULL
+    DROP TABLE tbl_Reservation;
 GO
 
 CREATE TABLE tbl_Reservation (

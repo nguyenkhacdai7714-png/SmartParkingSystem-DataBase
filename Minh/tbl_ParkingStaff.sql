@@ -1,8 +1,11 @@
-
 USE db_SmartParkingSystem;
 GO
 
-DROP TABLE IF EXISTS tbl_Staff;
+SET QUOTED_IDENTIFIER ON;
+GO
+
+IF OBJECT_ID('tbl_ParkingStaff', 'U') IS NOT NULL
+    DROP TABLE tbl_ParkingStaff;
 GO
 
 CREATE TABLE tbl_ParkingStaff (
