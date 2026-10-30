@@ -1,7 +1,8 @@
 USE db_SmartParkingSystem;
 GO
 
-DROP TABLE IF EXISTS tbl_ParkingRules;
+IF OBJECT_ID('tbl_ParkingRules', 'U') IS NOT NULL
+    DROP TABLE tbl_ParkingRules;
 GO
 
 -- Parking Rules: general rules of the whole system

@@ -1,7 +1,9 @@
 USE db_SmartParkingSystem;
 GO
 
-DROP TABLE IF EXISTS tbl_DailyReport;
+
+IF OBJECT_ID('tbl_DailyReport', 'U') IS NOT NULL
+    DROP TABLE tbl_DailyReport;
 GO
 
 -- Daily Report: one statistics record per day for the whole system

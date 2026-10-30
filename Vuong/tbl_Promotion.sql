@@ -1,7 +1,8 @@
 USE db_SmartParkingSystem
 GO
 
-DROP TABLE IF EXISTS tbl_Promotion;
+IF OBJECT_ID('tbl_Promotion', 'U') IS NOT NULL
+    DROP TABLE tbl_Promotion;
 GO
 
 CREATE TABLE tbl_Promotion (
