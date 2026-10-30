@@ -24,3 +24,19 @@ CREATE TABLE tbl_Promotion (
     CONSTRAINT CK_Promotion_MaxUse CHECK (Max_Use >= 1)
 );
 GO
+
+INSERT INTO tbl_Promotion
+    (Promotion_Code, Promotion_Name, Promotion_Type,
+     Promotion_Value, User_Type, Start_Date, End_Date, Max_Use)
+VALUES
+    ('PR001', 'Welcome Discount',  'PERCENTAGE', 10,     'CUSTOMER', '2026-01-01', '2027-01-01', 100),
+    ('PR002', 'Student Discount',  'PERCENTAGE', 15,     'CUSTOMER', '2026-02-01', '2027-02-01',  50),
+    ('PR003', 'Staff Discount',    'PERCENTAGE', 20,     'STAFF',    '2026-01-01', '2027-01-01',  30),
+    ('PR004', 'VIP Discount',      'FIXED',      50000,  'CUSTOMER', '2026-03-01', '2027-03-01',  20),
+    ('PR005', 'Weekend Offer',     'FIXED',      30000,  'ALL',      '2026-04-01', '2027-04-01', 200),
+    ('PR006', 'Summer Promotion',  'PERCENTAGE', 25,     'CUSTOMER', '2026-05-01', '2026-09-01',  80),
+    ('PR007', 'Admin Benefit',     'FIXED',      100000, 'ADMIN',    '2026-01-01', '2027-01-01',  10),
+    ('PR008', 'Night Discount',    'PERCENTAGE',  5,     'ALL',      '2026-06-01', '2026-12-31', 150),
+    ('PR009', 'Holiday Offer',     'FIXED',      40000,  'CUSTOMER', '2026-07-01', '2027-07-01',  60),
+    ('PR010', 'Early Bird',        'PERCENTAGE', 12,     'ALL',      '2026-08-01', '2027-08-01',  40);
+GO

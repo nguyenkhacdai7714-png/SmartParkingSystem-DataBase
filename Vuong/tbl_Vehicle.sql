@@ -14,3 +14,17 @@ CREATE TABLE tbl_Vehicle (
     REFERENCES tbl_User(User_ID) ON DELETE SET NULL
 );
 GO
+
+INSERT INTO tbl_Vehicle (License_Plate, User_ID)
+VALUES
+    ('51A-10001', 'U001'),
+    ('51A-10002', 'U002'),
+    ('51A-10003', 'U003'),
+    ('51A-10004', 'U004'),
+    ('51A-10005', 'U001'),
+    ('51A-10006', 'U005'),
+    ('51A-10007', 'U006'),
+    ('51A-10008', 'U002'),
+    ('51A-10009', 'U003'),
+    ('51A-10010', NULL);
+GO
