@@ -2,7 +2,8 @@
 USE db_SmartParkingSystem;
 GO
 
-DROP TABLE IF EXISTS tbl_ParkingSession;
+IF OBJECT_ID('tbl_ParkingSession', 'U') IS NOT NULL
+    DROP TABLE tbl_ParkingSession;
 GO
 
 CREATE TABLE tbl_ParkingSession (

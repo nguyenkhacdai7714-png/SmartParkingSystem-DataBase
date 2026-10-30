@@ -1,7 +1,9 @@
 USE db_SmartParkingSystem;
 GO
 
-DROP TABLE IF EXISTS tbl_ParkingLog;
+
+IF OBJECT_ID('tbl_ParkingLog', 'U') IS NOT NULL
+    DROP TABLE tbl_ParkingLog;
 GO
 
 -- Parking Log: records events in the system (USER / ADMIN / ERROR / WARN)
