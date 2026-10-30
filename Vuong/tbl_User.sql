@@ -20,3 +20,18 @@ CREATE TABLE tbl_User (
     CONSTRAINT CK_User_UserType CHECK (User_Type IN ('CUSTOMER', 'STAFF', 'ADMIN'))
 );
 GO
+
+INSERT INTO tbl_User
+    (User_ID, Username, Phone, Email, Balance, User_Type)
+VALUES
+    ('U001', N'Nguyen Van An',   '0900000001', 'an@example.com',   500000, 'CUSTOMER'),
+    ('U002', N'Tran Thi Binh',   '0900000002', 'binh@example.com', 350000, 'CUSTOMER'),
+    ('U003', N'Le Van Cuong',    '0900000003', 'cuong@example.com',200000, 'CUSTOMER'),
+    ('U004', N'Pham Thi Dung',   '0900000004', 'dung@example.com', 800000, 'CUSTOMER'),
+    ('U005', N'Hoang Van Em',    '0900000005', 'em@example.com',    50000, 'CUSTOMER'),
+    ('U006', N'Vo Thi Giang',    '0900000006', 'giang@example.com', 150000, 'CUSTOMER'),
+    ('U007', N'Do Van Huy',      '0900000007', 'huy@example.com',        0, 'STAFF'),
+    ('U008', N'Bui Thi Lan',     '0900000008', 'lan@example.com',        0, 'STAFF'),
+    ('U009', N'Ngo Van Minh',    '0900000009', 'minh@example.com',       0, 'STAFF'),
+    ('U010', N'Dang Thi Nga',    '0900000010', 'nga@example.com',        0, 'ADMIN');
+GO
