@@ -35,3 +35,10 @@ GO
 :r $(ProjectPath)\Thanh\tbl_ParkingRule.sql
 :r $(ProjectPath)\Thanh\tbl_DailyReport.sql
 GO
+
+:r $(ProjectPath)\functions.sql
+:r $(ProjectPath)\procedures.sql
+:r $(ProjectPath)\triggers.sql
+:r $(ProjectPath)\views.sql
+:r $(ProjectPath)\index.sql
+GO

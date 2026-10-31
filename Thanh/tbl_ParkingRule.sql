@@ -63,5 +63,5 @@ VALUES
     'ENABLED', '{"user_types":["STAFF","ADMIN"]}', '2026-10-08T11:00:00'),
 ('R011', 'Hourly Parking Price',
     'Parking price per hour for each spot type.',
-    'ENABLED', '{"PARKING":5000,"ELECTRIC":15000}', '2026-10-10T08:00:00');
+    'ENABLED', '5000', '2026-10-10T08:00:00');
 GO
